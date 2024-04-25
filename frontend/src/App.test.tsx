@@ -14,6 +14,7 @@ describe('The main app', () => {
   it('should render the Home link', () => {
     render(<App />);
     // expect(secreen.getAllByText('Home')).toBeInTheDocument();
+    //CHANGE
     expect(screen.getByRole('link', {name:"Home"})).toBeInTheDocument();
   });
   it('should render the Home header', () => {
